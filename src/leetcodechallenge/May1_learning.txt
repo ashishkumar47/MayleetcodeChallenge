@@ -1,0 +1,8 @@
+In a practical implementation, the variables used to represent the indices will often be of fixed size,
+ and this can result in an arithmetic overflow for very large arrays. 
+ If the midpoint of the span is calculated as
+ (l+r)/2
+ then the value of l+r may exceed the range of integers of the data type used to store the midpoint,
+  even if l and r are within the range. If l and r are nonnegative, this can be avoided by
+   calculating the midpoint as
+   l+(l+r)/2
