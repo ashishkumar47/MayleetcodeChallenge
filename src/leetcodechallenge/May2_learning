@@ -1,0 +1,3 @@
+use m.containsKey instead of m.get to checking whether a key is present or not because m.get will give "null" when a key
+is not present in map which can cause NPE but m.containsKey will give false if key is not present and true when present
+which can avoid NPE.
