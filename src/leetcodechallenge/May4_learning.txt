@@ -1,0 +1,9 @@
+we can use xor operator for reversing the bit of a number
+->If we do a xor between a bit and 1 the it will reverse the bit.
+->If we do a xor between a bit and 0 then it will give the bit as a result without any change in it.
+
+                 X | Y | z
+                 1 | 1 | 0
+                 1 | 0 | 1
+                 0 | 1 | 1
+                 0 | 0 | 0
