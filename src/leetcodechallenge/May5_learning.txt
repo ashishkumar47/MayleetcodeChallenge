@@ -1,0 +1,6 @@
+Instead of using hashMap for storing values we can use frequency array for storing the values,
+but for that we have to know the highest number possible in that array, so that we can make frequency array of
+that size and we don't get the ArrayIndexOutOfBound Exception.
+
+"s.charAt(i)-97"  This expression will give the corresponding position of the alphabet in lexographically order.
+ 
