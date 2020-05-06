@@ -1,0 +1,19 @@
+There are 4 different approaches for this problem
+
+1. BruteForce approach
+timeComplexity: O(N^2)
+spaceComplexity: O(1)
+
+2. using HashMap
+timeComplexity: O(N)
+spaceComplexity: O(N)
+
+3. using Sorting
+timeComplexity: O(NlogN)
+spaceComplexity: O(1);
+
+4. using Boyer-Moore voting Algorithm
+timeComplexity: O(N)
+Boyer-Moore performs constant work exactly nn times, so the algorithm runs in linear time
+spaceComplexity: O(1)
+Boyer-Moore allocates only constant additional memory
