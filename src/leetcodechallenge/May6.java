@@ -7,18 +7,16 @@ import java.util.Map;
 public class May6 {
 	public static int majorityElementUsingSorting(int[] nums) {
 		Arrays.sort(nums);
-		int count = 1;
-		for (int i = 0; i < nums.length - 1; i++) {
-			if (nums[i] == nums[i + 1]) {
-				count++;
-				if (count > nums.length / 2)
-					return nums[i];
-			} else {
-				count = 1;
-			}
-		}
-		return nums[0];
+		// return this if there is gurantee for majority element in the array
+		return nums[nums.length / 2];
+
+		// if there is no gurantee of majority element than calculate the frequency of
+		// middle element.
+		// if frequency is not greater than n/2 then majority element does not exist and
+		// return -1.
+		// if frequency is greater than n/2 then return the nums[n/2];
 	}
+
 	public static int majorityElement(int[] nums) {
 		Map<Integer, Integer> map = new HashMap<>();
 		for (int i = 0; i < nums.length; i++) {
