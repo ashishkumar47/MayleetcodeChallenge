@@ -5,6 +5,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class May6 {
+	public static int BoyerMooreVotingAlgorithm(int[] nums) {
+		int count = 1;
+		int major = nums[0];
+		for (int i = 1; i < nums.length; i++) {
+			if (nums[i] == major)
+				count++;
+			else
+				count--;
+			if (count == 0) {
+				major = nums[i];
+				count = 1;
+			}
+		}
+		return major;
+		// In case if there is no gurantee of having majority element in the array
+		// then we have to calculate the frequency of the major element to check its
+		// frequency > n/2
+	}
 	public static int majorityElementUsingSorting(int[] nums) {
 		Arrays.sort(nums);
 		// return this if there is gurantee for majority element in the array
@@ -38,6 +56,7 @@ public class May6 {
 		int[] a = { 2, 2, 1, 1, 1, 2, 2, 2 };
 		System.out.println(majorityElement(a));
 		System.out.println(majorityElementUsingSorting(a));
+		System.out.println(BoyerMooreVotingAlgorithm(a));
 
 	}
 
