@@ -1,0 +1,14 @@
+The approach for the problem is to finding the parent nodes and and there respective levels for the given 
+two nodes.
+After finding these values we just compare the level of parent nodes and there respective values.
+if they are at same level and different values then we return true else false;
+
+Approach 1
+
+In this approach we use two arrays of size 2 to store the values of level and parent value,then we
+compare these values for two given nodes to get the final result;
+
+Approach 2
+
+In this Approach we have make a separate class for storing the values of parent and the level and we return the
+the object of this class, we get two objects for two given node and we compare them to get the final result.
