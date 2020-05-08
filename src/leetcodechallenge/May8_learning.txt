@@ -1,0 +1,13 @@
+Three points are collinear points if exactly one line passes through it.
+
+There are three methods to find wether the 3 points are collinear or not.
+
+Let A,B,C are 3 points then the 3 points will be collinear if
+
+(1) The slope of line segment joining point A , B equals to the slope of line segment joining point B,C.
+
+(2) Area bounded by the triangle joining points A,B,C is zero.
+
+(3) The sum of distance between AB and BC is equal to the distance AC.
+
+We will considered first two points as A and B and rest of them as a C in loop.
