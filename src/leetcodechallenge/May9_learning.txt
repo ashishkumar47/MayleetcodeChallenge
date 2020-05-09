@@ -1,0 +1,14 @@
+It's an another application of binary search.
+where start=1 and end=num;
+ and checking 3 conditions
+ 
+ 1. if(mid*mid==num)
+ return true;
+ 
+ 2. else if(mid*mid>num)
+ end=mid-1;
+ 
+ 3. else if(mid*mid<num)
+ start=mid+1;
+ 
+ at last if we don't get square root of num then we return false;
