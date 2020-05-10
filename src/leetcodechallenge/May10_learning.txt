@@ -1,0 +1,12 @@
+There are two approaches for this problem
+
+Approach 1
+we store the trusted person value with the number of persons trust him in a map.
+and check whether its value is N-1 or not, if yes then we check if this person trust
+other person or not if not then its the answer if yes then we return -1;
+
+
+Approach 2
+we kept a count array, If a person is trusted by other person then we increment its frequency and if a person trust
+other person then we decrement its frequency, then final we check if any number exist in count array whose frequency
+is N-1 if yes then this is the answer, if not then we return -1;
