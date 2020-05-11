@@ -1,2 +1,10 @@
 it an application of BFS/DFS algorithm.
-There is  given pixel and and a newColor
+There is  given pixel and a newColor and we have to fill the newColor in the place of oldColor(which is the value of
+starting position) in such a way that any pixels connected 4-directionally to the starting pixel of the same 
+color as the starting pixel and any pixels connected 4-directionally  to those pixels.
+
+Note: If the starting value of color matches the newColor then we simply return the image, no further 
+operation will be performed;
+
+Time complexity: O(N), where N is the number of pixels in the image.
+Space complexity: O(N),size of the call stack.
