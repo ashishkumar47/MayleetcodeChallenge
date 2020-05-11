@@ -1,0 +1,2 @@
+it an application of BFS/DFS algorithm.
+There is  given pixel and and a newColor
