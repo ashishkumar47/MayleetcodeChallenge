@@ -1,0 +1,7 @@
+This is another application of binary search algorithm.
+
+The approach behind the problem is that we compare the given scenario with the array when there is no single element
+and decide the positions of l and r to reach our result.
+
+[1,1,2,3,3,4,4,8,8]
+[1,1,2,2,3,3,4,4,8,8]
