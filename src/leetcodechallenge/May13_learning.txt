@@ -1,0 +1,7 @@
+Its an application of greedy algorithm
+we take a stack and maintain a smallest number inside it with k digits removal.
+If a digit comes which is smaller than top of the stack then we replace the top of the stack with this digit
+and decrement k.and proceed until all the digits are traversed in the string.
+If k is still greater than zero it means that there are repeated digits, then we remove these digits until k>0.
+Then we form a string from the digits store in stack which is the smallest number.
+Then we remove the leading zeros if present and finally return the string.
