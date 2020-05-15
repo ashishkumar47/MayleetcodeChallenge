@@ -1,0 +1,2 @@
+Its an implementation of trie using hashMap.
+we can implement trie using an array of size 26.
