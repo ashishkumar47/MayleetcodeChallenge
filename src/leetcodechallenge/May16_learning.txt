@@ -1,0 +1,2 @@
+in this question we divide the list in two half oddList and evenList and finally merge them and return them.
+partition is done with the help of there pointer exchange.
