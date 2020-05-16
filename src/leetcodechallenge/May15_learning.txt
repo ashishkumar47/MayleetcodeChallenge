@@ -1,0 +1,16 @@
+This problem is similar to Kadane's algorithm where we find the maximum subarray sum in fixed array.
+There are are two cases that we have to handle in this problem.
+case 1: maximum sum is present in regular array.
+
+case 2:maximum sum is present in split way(half sum is present in normal array and half sum is present in next
+circular array)
+
+case 1 can be found using Kadane's algorithm.
+for case 2 we have to calculate sum of total array and minimum sub array sum. and output will be sum-minimum subarry
+sum.
+
+final result will be max(maximum Subarray,totalSum-minimum Subarray).
+
+last we have to handle is when all elements are negative in this case, totalSum==minimum Sub array,this will
+lead the false result.In that case we have to return maximum element of the array.
+ 
