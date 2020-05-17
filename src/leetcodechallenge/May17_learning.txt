@@ -1,0 +1,7 @@
+This question is the application of sliding window technique.
+we kept two arrays a and b which contains the frequency of characters of String s and p respectively.
+first we store the frequencies of characters of string p in the array a.
+and then start traversing string s in a sliding window technique manner in which we kept our window size equal
+to length of string p and updating the frequency of characters in array b,
+ and keep comparing frequency arrays a and b once we get the match we store the index of
+substring and keep traversing until string length.
