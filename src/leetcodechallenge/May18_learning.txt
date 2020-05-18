@@ -1,0 +1,4 @@
+This problem is the application of sliding window technique.
+In this we store the character count of s1 in array a and character count of s2 in array b
+and match if there character count is equal or not in a fixed window size manner which is equal to the length of
+s1. 
