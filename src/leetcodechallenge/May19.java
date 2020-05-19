@@ -1,45 +1,48 @@
 package leetcodechallenge;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class May19 {
-	public static boolean checkArrays(int[] a, int[] b) {
-		int i = 0, j = 0;
-		while (i < a.length && j < b.length) {
-			if (a[i] != b[j])
-				return false;
-			i++;
-			j++;
+	private class Stock {
+		public List<Integer> list;
+		public int lastDayStock;
+		Stock() {
+			list = new ArrayList<Integer>();
+			lastDayStock = 1;
 		}
-		return true;
 	}
 
-	public static boolean checkInclusion(String s1, String s2) {
-		int n = s1.length();
-		int m = s2.length();
-		if (n > m)
-			return false;
-		int a[] = new int[26];
-		int b[] = new int[26];
-		int count = 0;
-		for (int i = 0; i < n; i++) {
-			a[s1.charAt(i) - 'a']++;
-			if (i < n - 1) {
-				b[s2.charAt(i) - 'a']++;
-				count++;
-			}
-		}
-		for (int j = count; j < m; j++) {
-			b[s2.charAt(j) - 'a']++;
-			if (checkArrays(a, b))
-				return true;
-			b[s2.charAt(j - (n - 1)) - 'a']--;
+	private final Stock root;
+	public May19() {
+		root = new Stock();
+	}
 
+	public int next(int price) {
+		List<Integer>list=root.list;
+		list.add(price);
+		int span = 1;
+		if (list.size() == 1 || price < root.lastDayStock) {
+			root.lastDayStock = price;
+			return span;
 		}
-		return false;
+		for (int i = list.size() - 2; i >= 0; i--) {
+			int stockPrice = list.get(i);
+			if (stockPrice <= price)
+				span++;
+			else
+				break;
+		}
+		root.lastDayStock = price;
+		return span;
 	}
 
 	public static void main(String[] args) {
-		System.out.println(checkInclusion("ab", "eidbaooo"));
-		System.out.println(checkInclusion("ab", "eidboaooo"));
+		int[] a = { 100, 80, 60, 70, 60, 75, 85 };
+		May19 may19 = new May19();
+		for (int i = 0; i < a.length; i++) {
+			System.out.print(may19.next(a[i]) + " ");
+		}
 	}
 
 }

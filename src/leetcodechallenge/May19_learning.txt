@@ -1,0 +1,1 @@
+This problem is similar to the stock span problem solved using stack.
