@@ -26,13 +26,15 @@ public class May19 {
 			root.lastDayStock = price;
 			return span;
 		}
-		for (int i = list.size() - 2; i >= 0; i--) {
-			int stockPrice = list.get(i);
-			if (stockPrice <= price)
-				span++;
-			else
+		int position = list.size() - 2;
+		while (position >= 0) {
+			int stockPrice = list.get(position);
+			if (stockPrice > price) {
 				break;
+			}
+			position--;
 		}
+		span = span + (list.size() - 2) - position;
 		root.lastDayStock = price;
 		return span;
 	}

@@ -1,1 +1,8 @@
 This problem is similar to the stock span problem solved using stack.
+It's an online algorithm, we can't see the future elements,we need to give the answer by seeing the current
+element.
+The idea behind the algorithm is when ever we get a new price, we find the last greatest element from the current
+ element and we count the number of days between this position and the price and add to that to span and return
+ span.
+ for save the extra calls we maintain a variable "lastDayStock" which will store the previous day price.
+ if the price is smaller than the "lastDayStock" or list size is 1 then we directly return 1.
