@@ -1,0 +1,4 @@
+For finding the Kth smallest element in a BST we use Inorder traversal which gives the nodes in sorting order
+we take a array of size 2 which stores two values
+a[0] stores the position of elements.
+a[1] stores the value of Kth smallest element.
