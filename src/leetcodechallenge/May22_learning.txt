@@ -1,0 +1,25 @@
+This problem can be solve in multiple ways
+
+Approach 1:
+Store the frequency of each character in an array/Hashmap.
+using Max priority queue.
+Store the values in priority queue with character and there respective frequency and sort them on the basis
+of frequency and pop the elements from the queue and form string on the basis of number of
+times its frequency and return.
+Each node of max priority queue contain character and its respective frequency.
+
+Approach 2:(Accepted)
+Modified Selection Sort
+Store the frequency of each character in an array/Hashmap.
+travel the array and each time find the maxFrequency in the array and its respective index(which will help in
+finding character) and then form the string by joining that character on the number of times of its frequency
+and return the whole string.
+
+Approach 3:(Memory limit exceeded)
+
+Store the frequency of each character in an array/Hashmap.
+Make an array of list types of size equals to the length of string.
+Travel the Map/array and fill the character in the array of type list in there respective index as the frequency
+of character(List<Character>[] b= new List[s.length()+1])
+Travel the array in reverse order and form a string with each character on the number of times of its frequency
+and return the whole string.
