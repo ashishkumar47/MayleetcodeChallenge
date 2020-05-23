@@ -1,0 +1,6 @@
+The approach behind the problem is that we find the valid interval and depending on increment the i and j.
+if the upper limit of the intersection interval is from array a then we increment the i because the upper limit
+from array a shows that the interval is finished and interval of b is not finished, it means that the remaining
+interval of b can be accomodate in intersection interval, so we increment i to check whether its next element 
+accomodate the remaining range of element of a.
+viceVersa will happen with b and we increment j;
