@@ -1,0 +1,8 @@
+The idea behind the approach is that
+
+we take help of preorder that first index of array is root,and apply the bst property that left part of root is
+always smaller than root and right part is always greater than root.
+so we search the index till the element which is greater than root this will determine the end of left subtree
+and start of right subtree, and we divide the array in two parts on the basis of this.
+and we proceed the same approach with the left half of array and right half of array recursively.
+and one thing we keep in mind in every recursive call is that the first element of array is the root.
