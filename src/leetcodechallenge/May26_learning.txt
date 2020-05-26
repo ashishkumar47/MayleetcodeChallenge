@@ -1,0 +1,12 @@
+The approach behind the question is that
+
+Approach 1: brute force
+
+Approach 2:
+whenever we encounter zero we count it as -1 and for one as +1 and store the corresponding sum at every index
+in a hashmap.whenever we get the sum which is already present in the hashMap we calculate the length of subarray
+and compare it with the maxLength(Math.max(maxLength, i - m.get(count)));
+If a sum is not present in the hashMap then we just add the sum and its corresponding index in the HashMap.
+
+The idea behind storing sum and index is that whenever we get a repeat sum in the flow the number of zeros
+ and ones are equal between this occurence of sum's index and the index of last occurence of this sum. 
