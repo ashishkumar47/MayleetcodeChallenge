@@ -1,0 +1,11 @@
+The idea behind solving this problem is using BFS using adjacency list
+
+we first create the adjacency list from the given array.
+In adjacency list every element will contain its dislike elements which will not be lie in the same group.
+we start DFS from the first element of adjacency list and start assigning groups to the element and its
+corresponding dislike elements.
+The element and its corresponding list elements should be assign to different groups for bipartition.
+If the neighbouring point/elements of adjacency list is also assign to the same group of element then we return false;
+else return true;
+
+ 
