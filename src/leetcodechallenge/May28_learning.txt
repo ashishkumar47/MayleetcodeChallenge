@@ -1,1 +1,17 @@
-The idea behind the problem is
+The idea behind the problem is that
+
+when we divide a number by 2 we are right shifting the LSB of the number which is always zero in case of even
+number and 1 in case of odd number.After dividing by 2 if a number is odd then there will be a difference of 1
+bit between this number and new number formed and in case of even number there is no difference because we are
+right shifting the LSB and in case of odd it is 1 and in case of even it is 0, by dividing 2 we will lost this bit.
+
+5-> 101, numberOfsetBits=2
+5/2=2->10, numberOfSetBits=1
+
+4->100, numberOfsetBits=1
+4/2=2->10, numberOfsetBits=1
+
+so,when we calculate the numberOfsetBits for a odd number it will be a[n/2]+1 and for even a[n/2]. what we will do
+is we calculate numberOfsetBits for present number with the help of previously calculated numberOfsetBits for the
+number when divided by 2. If the number is odd then we just add 1 and store it for future reference or if it is
+even then we store it without adding 1 to it.
