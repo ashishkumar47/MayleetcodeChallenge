@@ -1,0 +1,2 @@
+The idea to solve the problem is to detect a cycle in a directed graph using BFS.
+If it is present then we return false else return true;
