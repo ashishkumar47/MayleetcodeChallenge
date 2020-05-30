@@ -1,0 +1,3 @@
+The idea to solve the problem is to store all the distances from the origin for there respective coordinates.
+and sort the array and find the (k-1)th distance from the sorted array.
+and find all the points which has distance less than or equal to this distance.
