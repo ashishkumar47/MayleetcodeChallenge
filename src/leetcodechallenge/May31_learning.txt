@@ -1,0 +1,14 @@
+The idea to solve the problem is 
+
+Approach 1
+this problem can be solved using recursion, but this will give the TLE for larger strings.
+If the character of the word matches then we decrement both the lengths.
+if it not matched then we have three choices.
+1. insert-> s1,s2.substring(1);
+2. delete-> s1.substring(1),s2;
+3. replace->s1.substring(1),s2.substring(1);
+Then return the min of them.
+
+Approach 2
+Approach2 is the optimisation of the recursive method, we save the already solved subproblem in a DP array
+,instead of calculating it again we directly return the previously saved result.
